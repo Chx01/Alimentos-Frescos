@@ -1,0 +1,9 @@
+CREATE TABLE Cliente (tipo varchar(255) NOT NULL, nombre varchar(255) NOT NULL, id varchar(255) NOT NULL, telefono varchar(255) NOT NULL, PRIMARY KEY (id));
+CREATE TABLE Compra (fecha date NOT NULL, cant varchar(255) NOT NULL, precio varchar(255) NOT NULL, id_fecha SERIAL NOT NULL, Productoid_producto int4 NULL, Proveedorid_proveedor int4 NULL, PRIMARY KEY (id_fecha));
+CREATE TABLE Pedido (cantidad varchar(255) NOT NULL, precio varchar(255) NOT NULL, estado varchar(255) NOT NULL, Productoid_producto int4 NULL, Clienteid varchar(255), id_pedido SERIAL NOT NULL, PRIMARY KEY (id_pedido));
+CREATE TABLE Producto (nombre varchar(255) NOT NULL, tipo varchar(255) NOT NULL, unidad_medida varchar(255) NOT NULL, precio_costo varchar(255) NOT NULL, id_producto SERIAL NOT NULL, PRIMARY KEY (id_producto));
+CREATE TABLE Proveedor (nombre varchar(255) NOT NULL, telefono varchar(255) NOT NULL, direccion varchar(255) NOT NULL, id_proveedor SERIAL NOT NULL, PRIMARY KEY (id_proveedor));
+ALTER TABLE Compra ADD CONSTRAINT FKCompra37046 FOREIGN KEY (Proveedorid_proveedor) REFERENCES Proveedor (id_proveedor);
+ALTER TABLE Compra ADD CONSTRAINT FKCompra394597 FOREIGN KEY (Productoid_producto) REFERENCES Producto (id_producto);
+ALTER TABLE Pedido ADD CONSTRAINT FKPedido725747 FOREIGN KEY (Productoid_producto) REFERENCES Producto (id_producto);
+ALTER TABLE Pedido ADD CONSTRAINT FKPedido852635 FOREIGN KEY (Clienteid) REFERENCES Cliente (id);

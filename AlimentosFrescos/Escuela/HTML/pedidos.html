@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Pedidos</title>
+    <link rel="stylesheet" href="../CSS/pedidos.css">
+</head>
+<body>
+    <h2>Pedidos</h2>
+          <form action="../PHP/InsertPedido.php" method="POST">
+              <label for="cantidad_pedido">Cantidad:</label>
+              <input type="text" id="cantidad_pedido" name="cantidad_pedido" required><br>
+              <br>
+              <label for="precio_pedido">Precio:</label>
+              <input type="number" step="0.01" id="precio_pedido" name="precio_pedido" required><br>
+              <br>  
+              <label for="estado_pedido">Estado del Pedido:</label>
+              <input type="text" id="estado_pedido" name="estado_pedido" required><br>
+              <br>      
+              <input type="submit" value="Agregar Pedido">
+          </form>
+</body>
+</html>

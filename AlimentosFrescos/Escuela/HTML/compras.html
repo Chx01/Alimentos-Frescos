@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Compras</title>
+    <link rel="stylesheet" href="../CSS/compras.css">
+</head>
+<body>
+    <h2>Compras</h2>
+    <form action="../PHP/InsertCompras.php" method="POST">
+        <label for="fecha_compra">Fecha:</label>
+        <input type="date" id="fecha_compra" name="fecha_compra" required><br>
+        <br>
+        <label for="cantidad_compra">Cantidad:</label>
+        <input type="text" id="cantidad_compra" name="cantidad_compra" required><br>
+        <br>
+        <label for="precio_compra">Precio:</label>
+        <input type="number" step="0.01" id="precio_compra" name="precio_compra" required><br>
+        <br>
+        <input type="submit" value="Agregar Compra">
+    </form>
+</body>
+</html>

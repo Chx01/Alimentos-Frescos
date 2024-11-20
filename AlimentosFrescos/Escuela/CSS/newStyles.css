@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Color de fondo suave */
+}
+
+header {
+    background-color: #4CAF50; /* Verde fresco */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333; /* Fondo oscuro para la navegación */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Disposición horizontal */
+}
+
+nav ul li {
+    position: relative; /* Para posicionar el menú desplegable */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Color al pasar el mouse */
+}
+
+.dropdown {
+    display: none; /* Ocultar el menú desplegable por defecto */
+    position: absolute; /* Posicionar el menú desplegable */
+    top: 100%; /* Justo debajo del elemento padre */
+    left: 0;
+    background-color: #444; /* Fondo del menú desplegable */
+    z-index: 1; /* Asegurar que se muestre encima de otros elementos */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.dropdown li {
+    width: 200px; /* Ancho fijo para las opciones del menú */
+}
+
+.dropdown li a {
+    padding: 10px; /* Espaciado interno en las opciones del menú */
+    color: #f9f9f9; /* Color del texto en el menú desplegable */
+}
+
+.dropdown li a:hover {
+    background-color: #575757; /* Color al pasar el mouse en el dropdown */
+}
+
+nav ul li:hover .dropdown {
+    display: block; /* Mostrar el menú desplegable al pasar el mouse */
+}
+
+body, html {
+    margin: 0; /* Eliminar márgenes del body y html */
+    padding: 0; /* Eliminar relleno del body y html */
+}
+
+.image-container {
+    text-align: center; /* Centrar la imagen */
+    margin-top: 0; /* Espaciado superior */
+}
+
+.image-container img {
+    width: 100%; /* Hacer que la imagen ocupe el 100% del ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    display: block; /* Eliminar espacio en la parte inferior de la imagen */
+}
+
+.dropdown-table{
+    position: absolute;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0, 0, 0);
+    display: none;
+    z-index: 10;
+    padding: 10px;
+    max-height: 200px;
+    overflow: auto;
+}
+li:hover > .dropdown{
+    display: block;    
+}
+table{
+    width: 100%; border-collapse: collapse;    
+}
+th,td{
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: left;
+}

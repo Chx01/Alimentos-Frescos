@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Clientes</title>
+    <link rel="stylesheet" href="../CSS/clientes.css">   
+</head>
+<body> 
+    <h2>Clientes</h2>
+        <form action="../PHP/InsertCliente.php" method="POST"        >
+            <label for="tipo_cliente">Tipo:</label>
+            <input type="text" id="tipo_cliente" name="tipo_cliente" required><br>
+            <br> 
+            <label for="nombre_cliente">Nombre:</label>
+            <input type="text" id="nombre_cliente" name="nombre_cliente" required><br>
+            <br>
+            <label for="carnet_cliente">Carnet de Identidad:</label>
+            <input type="text" id="carnet_cliente" name="carnet_cliente" required><br>
+            <br>
+            <label for="telefono_cliente">Teléfono:</label>
+            <input type="tel" id="telefono_cliente" name="telefono_cliente" required><br>
+            <br> 
+            <input type="submit" value="Agregar Cliente">
+        </form>       
+</body>
+</html>

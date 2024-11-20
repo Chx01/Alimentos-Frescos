@@ -1,0 +1,54 @@
+
+body {   
+    font-family: Arial, sans-serif;   
+    background-color: #f9f9f9; /* Color de fondo suave */   
+    color: #333; /* Color del texto */   
+    margin: 0;   
+    padding: 20px;   
+}   
+
+h2 {   
+    text-align: center;   
+    color: #2e7d32; /* Verde para el título */   
+}   
+
+table {   
+    width: 100%;   
+    border-collapse: collapse;   
+    margin-top: 20px;   
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);   
+}   
+
+thead {   
+    background-color: #4caf50; /* Verde oscuro */   
+    color: white; /* Color del texto en el encabezado */   
+}   
+
+th, td {   
+    padding: 12px;   
+    text-align: left;   
+    border: 1px solid #ddd; /* Borde suave */   
+}   
+
+tr:nth-child(even) {   
+    background-color: #f2f2f2; /* Alterna filas con fondo claro */   
+}   
+
+tr:hover {   
+    background-color: #e0e0e0; /* Color de fondo al pasar el mouse */   
+}   
+
+.eliminar {   
+    background-color: #d32f2f; /* Rojo para el botón de eliminar */   
+    color: white; /* Color del texto del botón */   
+    border: none;   
+    padding: 8px 12px;   
+    cursor: pointer;   
+    border-radius: 4px;   
+    transition: background-color 0.3s;   
+}   
+
+.eliminar:hover {   
+    background-color: #c62828; /* Color más oscuro al pasar el mouse */   
+}   
+
